@@ -1,8 +1,12 @@
-# useCountUp
+# usebox
+
+Unsorted collection of Vue composition utilities.
+
+## useCountUp
 
 Simple composable to count up to a number.
 
-## Usage
+### Usage
 
 ```vue
 <template>

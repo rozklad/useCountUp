@@ -1,0 +1,40 @@
+{
+  "name": "usebox",
+  "version": "0.1.0",
+  "description": "Unsorted collection of Vue composition utilities",
+  "author": "Jan Rozklad <https://github.com/rozklad>",
+  "license": "MIT",
+  "homepage": "https://github.com/rozklad/usebox",
+  "bugs": {
+    "url": "https://github.com/rozklad/usebox/issues"
+  },
+  "keywords": [
+    "vue",
+    "utils"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./index.mjs"
+    }
+  },
+  "scripts": {
+    "build": "npx rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.0.0",
+    "cz-conventional-changelog": "3.3.0",
+    "esbuild": "^0.16.17",
+    "fast-glob": "^3.2.12",
+    "rollup": "^3.10.0",
+    "rollup-plugin-esbuild": "^5.0.0",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.4",
+    "vue": "^3.2.45"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
