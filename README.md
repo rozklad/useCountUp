@@ -19,3 +19,15 @@ import { useCountUp } from '@rozklad/usebox';
 const { current: code } = useCountUp(0, 404, 1, 10);
 </script>
 ```
+
+## MountedTeleport
+
+```vue
+<template>
+  <MountedTeleport to="#slider-controls"> </MountedTeleport>
+</template>
+
+<script setup>
+import { MountedTeleport } from '@rozklad/usebox';
+</script>
+```
