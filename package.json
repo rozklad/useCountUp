@@ -1,5 +1,5 @@
 {
-  "name": "usebox",
+  "name": "@rozklad/usebox",
   "version": "0.1.0",
   "description": "Unsorted collection of Vue composition utilities",
   "author": "Jan Rozklad <https://github.com/rozklad>",
@@ -36,5 +36,10 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "main": "index.mjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rozklad/usebox.git"
   }
 }
