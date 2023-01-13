@@ -14,7 +14,7 @@ Simple composable to count up to a number.
 </template>
 
 <script setup>
-import { useCountUp } from "@/composables/useCountup";
+import { useCountUp } from '@rozklad/usebox';
 
 const { current: code } = useCountUp(0, 404, 1, 10);
 </script>
