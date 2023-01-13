@@ -1,2 +1,2 @@
 export * from './useCountUp';
-export * from './mountedTeleport/MountedTeleport.vue';
+export { default as MountedTeleport } from './mountedTeleport/MountedTeleport.vue';

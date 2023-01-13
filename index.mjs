@@ -54,4 +54,4 @@ var script = /* @__PURE__ */ defineComponent({
 
 script.__file = "src/mountedTeleport/MountedTeleport.vue";
 
-export { useCountUp };
+export { script as MountedTeleport, useCountUp };
