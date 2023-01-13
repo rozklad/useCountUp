@@ -1,4 +1,4 @@
-import { ref } from 'vue';
+import { ref, defineComponent, onMounted, openBlock, createBlock, Teleport, renderSlot, createCommentVNode } from 'vue';
 
 function useCountUp(initialValue, targetValue, step, interval) {
   const current = ref(initialValue);
@@ -29,5 +29,29 @@ function useCountUp(initialValue, targetValue, step, interval) {
   start();
   return { current, start, reset };
 }
+
+var script = /* @__PURE__ */ defineComponent({
+  __name: "MountedTeleport",
+  props: {
+    to: { type: String, required: true, default: "body" }
+  },
+  setup(__props) {
+    const props = __props;
+    const isMounted = ref(false);
+    onMounted(() => {
+      isMounted.value = true;
+    });
+    return (_ctx, _cache) => {
+      return isMounted.value ? (openBlock(), createBlock(Teleport, {
+        key: 0,
+        to: props.to
+      }, [
+        renderSlot(_ctx.$slots, "default")
+      ], 8, ["to"])) : createCommentVNode("v-if", true);
+    };
+  }
+});
+
+script.__file = "src/mountedTeleport/MountedTeleport.vue";
 
 export { useCountUp };

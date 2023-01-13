@@ -1,9 +1,11 @@
 import fg from 'fast-glob';
 import type { RollupOptions } from 'rollup';
 import esbuild from 'rollup-plugin-esbuild';
+import vue from 'rollup-plugin-vue';
 
 const bundles: RollupOptions[] = [];
 
+// Utilities
 const utilities: string[] = fg
   .sync('src/*/index.ts')
   .map((entry) => entry.split('/')[1]);
@@ -26,7 +28,7 @@ bundles.push({
     file: 'index.mjs',
     format: 'es',
   },
-  plugins: [esbuild()],
+  plugins: [vue(), esbuild()],
 });
 
 export default bundles;

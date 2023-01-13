@@ -41,5 +41,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rozklad/usebox.git"
+  },
+  "dependencies": {
+    "rollup-plugin-vue": "^6.0.0"
   }
 }
