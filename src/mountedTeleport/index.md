@@ -1,3 +1,7 @@
+---
+title: MountedTeleport
+---
+
 # mountedTeleport
 
 ```html

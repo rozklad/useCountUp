@@ -19,7 +19,10 @@
     }
   },
   "scripts": {
-    "build": "npx rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript"
+    "build": "npx rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
+    "docs:dev": "vitepress dev src",
+    "docs:build": "vitepress build src",
+    "docs:preview": "vitepress preview src"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.0.0",
@@ -30,6 +33,7 @@
     "rollup-plugin-esbuild": "^5.0.0",
     "tslib": "^2.4.1",
     "typescript": "^4.9.4",
+    "vitepress": "^1.0.0-alpha.38",
     "vue": "^3.2.45"
   },
   "config": {

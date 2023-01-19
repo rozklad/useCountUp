@@ -1,7 +1,12 @@
+---
+title: useCountUp
+---
+
 # useCountUp
 
 ```html
-<p class="text-[96px] text-teal-200 font-screen">{{ code }}</p>
+<!-- Count up to 404 -->
+<p>{{ code }}</p>
 ```
 
 ```ts
