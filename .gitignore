@@ -6,4 +6,4 @@
 
 # Built files
 /dist
-.vitepress/cache
+src/.vitepress/cache/
