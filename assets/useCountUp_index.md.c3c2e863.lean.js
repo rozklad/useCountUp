@@ -1,1 +1,0 @@
-import{_ as s,c as a,o as n,d as o}from"./app.a90c28d4.js";const u=JSON.parse('{"title":"useCountUp","description":"","frontmatter":{"title":"useCountUp"},"headers":[],"relativePath":"useCountUp/index.md"}'),l={name:"useCountUp/index.md"},p=o("",3),t=[p];function e(c,r,D,y,C,F){return n(),a("div",null,t)}const A=s(l,[["render",e]]);export{u as __pageData,A as default};
