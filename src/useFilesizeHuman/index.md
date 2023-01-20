@@ -4,7 +4,7 @@ title: useFilesizeHuman
 
 # useFilesizeHuman
 
-Element that counts up to a given number.
+Get human readable file size.
 
 ```html
 <!-- Count up to 404 -->
