@@ -10,7 +10,10 @@ export default {
       },
       {
         text: 'Utilities',
-        items: [{ text: 'useCountUp', link: '/useCountUp/index' }],
+        items: [
+          { text: 'useCountUp', link: '/useCountUp/index' },
+          { text: 'useFilesizeHuman', link: '/useFilesizeHuman/index' },
+        ],
       },
     ],
   },

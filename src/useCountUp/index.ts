@@ -1,5 +1,14 @@
 import { ref } from 'vue';
 
+/**
+ * Count up to number
+ *
+ * @param initialValue Starting value
+ * @param targetValue Ending value
+ * @param step Incremental step
+ * @param interval Interval in milliseconds
+ * @return
+ */
 export function useCountUp(
   initialValue: number,
   targetValue: number,
