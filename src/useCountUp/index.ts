@@ -15,7 +15,7 @@ export function useCountUp(
   const isValidCountUp = (): boolean =>
     current.value !== targetValue || current.value < targetValue;
 
-  let counter: number | undefined;
+  let counter: ReturnType<typeof setInterval> | undefined;
 
   const start = (): boolean => {
     reset();
