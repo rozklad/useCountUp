@@ -8,7 +8,7 @@
  *
  * @return Formatted string.
  */
-export function filesizeHumanReadable(
+export function useFilesizeHuman(
   bytes: number,
   si: Boolean = false,
   dp: number = 1,
