@@ -1,6 +1,6 @@
 {
   "name": "@rozklad/usebox",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Unsorted collection of Vue composition utilities",
   "author": "Jan Rozklad <https://github.com/rozklad>",
   "license": "MIT",
